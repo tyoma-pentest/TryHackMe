@@ -6,7 +6,7 @@
 
 | Комната | Тема | Сложность | Статус |
 |:---|:---|:---:|:---:|
-| [Nmap](/main/nmap-basics.md) | Сканирование сетей, флаги, скрипты | Easy | ✅ |
+| [Nmap](TryHackMe/blob/main/nmap-basics.md) | Сканирование сетей, флаги, скрипты | Easy | ✅ |
 | Wireshark 101 | Анализ трафика | Easy | ⏳ |
 | Blue | EternalBlue, Metasploit | Easy | ⏳ |
 
