@@ -7,6 +7,7 @@
 | Комната | Тема | Сложность | Статус |
 |:---|:---|:---:|:---:|
 | [Nmap](nmap-basics.md) | Сканирование сетей, флаги, скрипты | Easy | ✅ |
+| Intro to LAN | Локальные сети | Info| ✅ |  
 | Wireshark 101 | Анализ трафика | Easy | ⏳ |
 | Blue | EternalBlue, Metasploit | Easy | ⏳ |
 
