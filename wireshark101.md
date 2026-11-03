@@ -1,4 +1,4 @@
-# TryHackMe: Wireshark 101 (Part 1)
+# TryHackMe: Wireshark 101
 
 **Платформа:** TryHackMe  
 **Сложность:** Easy  
