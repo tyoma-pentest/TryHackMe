@@ -9,7 +9,7 @@
 | [Nmap](nmap-basics.md) | Сканирование сетей, флаги, скрипты | Easy | ✅ |
 | Intro to LAN | Локальные сети | Info| ✅ |
 | Red Team Fundamentals | Red Team Ops | Easy | ✅ |
-| [Wireshark 101](wireshark.md) | Анализ трафика | Easy | ✅ |
+| [Wireshark 101](wireshark101.md) | Анализ трафика | Easy | ✅ |
 | Blue | EternalBlue, Metasploit | Easy | ⏳ |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
