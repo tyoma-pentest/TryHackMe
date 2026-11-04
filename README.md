@@ -10,6 +10,6 @@
 | Intro to LAN | Локальные сети | Info| ✅ |
 | Red Team Fundamentals | Red Team Ops | Easy | ✅ |
 | [Wireshark 101](wireshark101.md) | Анализ трафика | Easy | ✅ |
-| Blue | EternalBlue, Metasploit | Easy | ⏳ |
+| [Blue](blue.md) | EternalBlue, Metasploit | Easy | ✅ |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
