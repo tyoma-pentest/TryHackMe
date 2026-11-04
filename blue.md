@@ -76,7 +76,7 @@
 `ls`
 `cat flag3.txt`
 Вывод: `flag{admin_documents_can_be_valuable}`
-Скопируем оба флага и отправим их в ответы на TryHackMe. Лаба решена!
+Скопируем флаги и отправим их в ответы на TryHackMe.
 
 ---
 
