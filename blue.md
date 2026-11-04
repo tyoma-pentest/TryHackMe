@@ -1,4 +1,4 @@
-# TryHackMe: Blue
+<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/5bccb852-d60b-48d9-bde1-c9e119b67635" /># TryHackMe: Blue
 
 **Платформа:** TryHackMe  
 **Сложность:** Easy  
@@ -35,3 +35,8 @@
 `search ms17-010`:
 
 ![Решения](images/12.png)
+
+`use  explot/windows/smb/ms17_010_eternalblue`
+`show options`
+
+![Решения](images/15.png)
