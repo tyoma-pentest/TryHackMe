@@ -11,5 +11,6 @@
 | Red Team Fundamentals | Red Team Ops | Easy | ✅ |
 | [Wireshark 101](wireshark101.md) | Анализ трафика | Easy | ✅ |
 | [Blue](blue.md) | EternalBlue, Metasploit | Easy | ✅ |
+| [SQLMAP](sqlmap.md) | SQLMap | Easy | ✅ |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
