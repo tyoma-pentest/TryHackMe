@@ -1,4 +1,4 @@
-<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/5bccb852-d60b-48d9-bde1-c9e119b67635" /># TryHackMe: Blue
+# TryHackMe: Blue
 
 **Платформа:** TryHackMe  
 **Сложность:** Easy  
