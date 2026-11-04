@@ -36,7 +36,8 @@
 
 ![Решения](images/12.png)
 
-`use  explot/windows/smb/ms17_010_eternalblue`
+`use  exploit/windows/smb/ms17_010_eternalblue`
 `show options`
 
 ![Решения](images/15.png)
+
