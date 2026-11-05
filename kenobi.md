@@ -61,6 +61,7 @@
 `find / -perm -u=s -type f 2>/dev/null`
 
 Среди стандартных системных файлов находим `/usr/bin/menu`. Запускаем его и видим меню с тремя пунктами: 
+
 `1. status check`  
 `2. kernel version`    
 `3. ifconfig.`  
