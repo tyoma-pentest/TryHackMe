@@ -12,5 +12,6 @@
 | [Wireshark 101](wireshark101.md) | Анализ трафика | Easy | ✅ |
 | [Blue](blue.md) | EternalBlue, Metasploit | Easy | ✅ |
 | [SQLMAP](sqlmap.md) | SQLMap | Easy | ✅ |
+| [Kenobi](kenobi.md) | Linux, SUID, ProFTPd | Easy | ✅ |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
