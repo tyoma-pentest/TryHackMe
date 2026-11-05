@@ -30,7 +30,7 @@
 Используем `searchsploit`, чтобы убедиться в наличии готовых эксплойтов: 
 `searchsploit ProFTPd`
 
-![Решения](images/30.png)
+![Решения](images/35.png)
 
 Из логов SMB мы знаем, что у пользователя `kenobi` есть SSH-ключ по пути `/home/kenobi/.ssh/id_rsa`. Скопируем его в доступную папку `/var/tmp`:
 `SITE CPFR /home/kenobi/.ssh/id_rsa`
