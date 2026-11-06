@@ -14,5 +14,6 @@
 | [SQLMAP](sqlmap.md) | SQLMap | Easy | ✅ |
 | [Kenobi](kenobi.md) | Linux, SUID, ProFTPd | Easy | ✅ |
 | Offensive Security Intro | Введение в пентест | Info | ✅ |
+| [SearchSkills](search-skills.md) | OSINT | Easy | ✅ |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
