@@ -20,7 +20,7 @@
 
 После этого я запустил `gobuster`: 
 
-`gobuster dir -u http://10.113.146.117 -w /usr/share/wordlists/dirb/common.txt -k`
+`gobuster dir -u http://10.113.146.119 -w /usr/share/wordlists/dirb/common.txt -k`
 
 Я получил такой вывод (в нем показаны не все домены, так как просто не поместились)
 
