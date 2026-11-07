@@ -15,5 +15,6 @@
 | [Kenobi](kenobi.md) | Linux, SUID, ProFTPd | Easy | ✅ |
 | Offensive Security Intro | Введение в пентест | Info | ✅ |
 | [SearchSkills](search-skills.md) | OSINT | Easy | ✅ |
+| [Mr Robot CTF](MrRobotCTF.md) | CTF | Medium | 85% |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
