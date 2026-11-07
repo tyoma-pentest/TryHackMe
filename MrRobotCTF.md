@@ -72,9 +72,13 @@
 
 На выходе я получил такой пароль: **abcdefghijklmnopqrstuvwxyz**
 
+![Решения](images/53.png)
+
 После этого в терминале внутри машины я ввел:  
 `su - robot`  
 Далее я ввел пароль:  
 `Password: abcdefghijklmnopqrstuvwxyz`  
 И наконец смог прочитать файл со вторым флагом:  
 ` cat /home/robot/key-2-of-3.txt`: **822c73956184f694993bede3eb39f959**  
+
+![Решения](images/54.png)
