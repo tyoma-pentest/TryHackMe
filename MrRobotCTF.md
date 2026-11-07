@@ -66,3 +66,15 @@
 
 ![Решения](images/52.png)
 
+Далее, имея **MD5-хеш**, можно его прогнать через `JohnTheRipper` таким образом:  
+`echo "c3fcd3d76192e4007dfb496cca67e13b" > hash.txt` - записываем хеш в файл .txt  
+`john --format=Raw-MD5 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt` - обращаемся к `JohnTheRipper`
+
+На выходе я получил такой пароль: **abcdefghijklmnopqrstuvwxyz**
+
+После этого в терминале внутри машины я ввел:  
+`su - robot`  
+Далее я ввел пароль:  
+`Password: abcdefghijklmnopqrstuvwxyz`  
+И наконец смог прочитать файл со вторым флагом:  
+` cat /home/robot/key-2-of-3.txt`: **822c73956184f694993bede3eb39f959**  
