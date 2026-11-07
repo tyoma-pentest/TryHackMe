@@ -61,12 +61,14 @@
 
 ![Решение](images/51.png)
 
-После чего я прочитал файл `password.raw-md5` - это **MD5-хеш**
-`cat /home/robot/password.raw-md5`
+После чего я прочитал файл `password.raw-md5` - это **MD5-хеш**  
+
+`cat /home/robot/password.raw-md5`  
 
 ![Решения](images/52.png)
 
 Далее, имея **MD5-хеш**, можно его прогнать через `JohnTheRipper` таким образом:  
+
 `echo "c3fcd3d76192e4007dfb496cca67e13b" > hash.txt` - записываем хеш в файл .txt  
 `john --format=Raw-MD5 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt` - обращаемся к `JohnTheRipper`
 
