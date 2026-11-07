@@ -1,7 +1,7 @@
 # TryHackMe: Mr Robot CTF
 
 **Платформа:** TryHackMe  
-**Сложность:** Easy  
+**Сложность:** Medium  
 **Дата:** 06.11.2026
 
 ![Решения](images/mp5JwKO.png)
