@@ -17,6 +17,6 @@
 | [SearchSkills](search-skills.md) | OSINT | Easy | ✅ |
 | [Mr Robot CTF](MrRobotCTF.md) | CTF | Medium | 85% |
 | Defensive Security Intro | Оборонительная безопасность | Easy | ✅ |
-| [Guided Pentest: WEB](guidedpentest-web.md) | Тестирование на проникнвоение | Easy | ✅ |
+| [Guided Pentest: WEB](guidedpentest-web.md) | Тестирование на проникнвоение веб-приложения | Easy | ✅ |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
