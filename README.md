@@ -16,5 +16,6 @@
 | Offensive Security Intro | Введение в пентест | Info | ✅ |
 | [SearchSkills](search-skills.md) | OSINT | Easy | ✅ |
 | [Mr Robot CTF](MrRobotCTF.md) | CTF | Medium | 85% |
+| Defensive Security Intro | Оборонительная безопасность | Easy | ✅ |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
