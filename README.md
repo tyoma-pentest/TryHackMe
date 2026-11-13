@@ -22,4 +22,5 @@
 | Dive Into Pentesting | Basics of penetration testing | Easy | ✅ |
 | Cyber Kill Chain | cyberkillchain | Easy | ✅ |
 | Penetration Testing Frameworks | Landscape of penetration testing frameworks | Easy | ✅ |
+
 *Таблица будет пополняться по мере прохождения новых комнат.*
