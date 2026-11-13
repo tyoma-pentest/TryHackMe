@@ -38,7 +38,10 @@
 В ходе лабы мы искали скрытые флаги в TXT-записях домена `thmlabs.com`.
 
 **Команда через nslookup:**
-```bash
-nslookup -type=TXT thmlabs.com
+
+`nslookup -type=TXT thmlabs.com`
+
+![Решения](images/100.png)
+
 
 
