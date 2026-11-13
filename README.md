@@ -22,6 +22,6 @@
 | Dive Into Pentesting | Basics of penetration testing | Easy | ✅ |
 | Cyber Kill Chain | cyberkillchain | Easy | ✅ |
 | Penetration Testing Frameworks | Landscape of penetration testing frameworks | Easy | ✅ |
-| [Passive Reconnaissance](passive-reconnaisance.md) | Пассивная разведка | Easy | ✅ |
+| [Passive Reconnaissance](passive-reconnaissance.md) | Пассивная разведка | Easy | ✅ |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
