@@ -23,5 +23,6 @@
 | Cyber Kill Chain | cyberkillchain | Easy | ✅ |
 | Penetration Testing Frameworks | Landscape of penetration testing frameworks | Easy | ✅ |
 | [Passive Reconnaissance](passive-reconnaissance.md) | Пассивная разведка | Easy | ✅ |
+| [Active Reconnaissance](active-reconnaissance.md) | Активная разведка | Easy | ✅ |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
