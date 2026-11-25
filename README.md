@@ -24,5 +24,6 @@
 | Penetration Testing Frameworks | Landscape of penetration testing frameworks | Easy | ✅ |
 | [Passive Reconnaissance](passive-reconnaissance.md) | Пассивная разведка | Easy | ✅ |
 | [Active Reconnaissance](active-reconnaissance.md) | Активная разведка | Easy | ✅ |
+| [Relevant](relevant.md) | Инфраструктурный пентест Windows | Medium | ✅ |
 
 *Таблица будет пополняться по мере прохождения новых комнат.*
